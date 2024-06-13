@@ -1,25 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import EventMe from './ch01/EventMe';
+import EventListener from './ch01/EventListener';
+import OnClick from './ch01/OnClick';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+		<OnClick/>
+		{/* <EventListener/> */}
+	</>
   );
 }
 
