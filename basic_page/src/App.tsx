@@ -12,6 +12,7 @@ import BasicForm from './ch04/src/pages/BasicForm';
 import ClassLifecycle from './ch04/src/pages/ClassLifecycle';
 import WindowResizeTest from './ch04/src/pages/WindowResizeTest';
 import FetchTest from './ch04/src/pages/FetchTest';
+import ClickTest from './ch04/src/pages/ClickTest';
 
 function App() {
 	return (
@@ -25,6 +26,7 @@ function App() {
 			<ClassLifecycle/>
 			<WindowResizeTest/>
 			<FetchTest/>
+			<ClickTest/>
 		</>
 	);
 }
