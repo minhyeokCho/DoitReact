@@ -8,17 +8,25 @@ import Callback from './ch04/src/pages/Callback';
 import NumberState from './ch04/src/pages/NumberState';
 import InputTest from './ch04/src/pages/InputTest';
 import RadioInputTest from './ch04/src/pages/RadioInputTest';
+import BasicForm from './ch04/src/pages/BasicForm';
+import ClassLifecycle from './ch04/src/pages/ClassLifecycle';
+import WindowResizeTest from './ch04/src/pages/WindowResizeTest';
+import FetchTest from './ch04/src/pages/FetchTest';
 
 function App() {
-  return (
-    <>
-		<OnClick/>
-		{/* <EventListener/> */}
-		<Callback/>
-		<NumberState/>
-		<RadioInputTest/>
-	</>
-  );
+	return (
+		<>
+			<OnClick/>
+			{/* <EventListener/> */}
+			<Callback/>
+			<NumberState/>
+			<RadioInputTest/>
+			<BasicForm/>
+			<ClassLifecycle/>
+			<WindowResizeTest/>
+			<FetchTest/>
+		</>
+	);
 }
 
 export default App;
