@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import EventMe from './ch01/EventMe';
 import EventListener from './ch01/EventListener';
@@ -13,8 +12,13 @@ import ClassLifecycle from './ch04/src/pages/ClassLifecycle';
 import WindowResizeTest from './ch04/src/pages/WindowResizeTest';
 import FetchTest from './ch04/src/pages/FetchTest';
 import ClickTest from './ch04/src/pages/ClickTest';
+import { useStore } from './ch04/src/store';
+import { Provider as ReduxProvider } from 'react-redux';
+import ReduxClock from './ch04/src/pages/ReduxClock';
+
 
 function App() {
+	const store = useStore()
 	return (
 		<>
 			<OnClick/>
@@ -27,6 +31,12 @@ function App() {
 			<WindowResizeTest/>
 			<FetchTest/>
 			<ClickTest/>
+			<ReduxProvider store={store}>
+				<div>
+					<ReduxClock/>
+
+				</div>
+			</ReduxProvider>
 		</>
 	);
 }
